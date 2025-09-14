@@ -1,3 +1,5 @@
+# 1. Faça um programa que receba quatro números inteiros, calcule e mostre a soma desses números.
+
 # ALGORITMO soma
 
 n1 = int(input("Número 1: "))
