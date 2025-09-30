@@ -8,21 +8,21 @@ receba o código e o valor de quinze transações, calcule e mostre:
 vezes.
 '''
 cont = 0
-transacaoA = 0
+transacaoV = 0
 transacaoP = 0
 
 while cont < 15:
     codigo = (input("Digite o código: "))
     transacao = float(input("Digite o valor da transação: "))
     if codigo == 'V':
-        transacaoA = transacaoA + transacao
+        transacaoV = transacaoV + transacao
     elif codigo == 'P':
         transacaoP = transacaoP + transacao
     else:
         print("Digite um código válido")
     cont = cont + 1
 
-print("O valor total das compras á vista: ",transacaoA)
+print("O valor total das compras á vista: ",transacaoV)
 print("O valor total das compras a prazo: ",transacaoP)
-print("O valor total das compras efetuadas: ",transacaoA + transacaoP)
+print("O valor total das compras efetuadas: ",transacaoV + transacaoP)
 print("O valor de primeira prestação das compras a prazo juntas: ",transacaoP/3)

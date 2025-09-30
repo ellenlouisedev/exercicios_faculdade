@@ -20,3 +20,9 @@ QUANTIDADE DE PARCELAS | PERCENTUAL DE ACRÉSCIMOSOBRE O PREÇO FINAL
 valor = float(input("Digite o valor do carro: "))
 
 aVista = valor - (valor * 0.20)
+
+for cont in range (6, 61, 6):
+    acrescimo = (cont // 6) * 3
+    total = valor + (valor * acrescimo / 100)
+    parcela = total / cont
+    print (cont, "x de R$", round(parcela, 2), "- Total: R$",total)

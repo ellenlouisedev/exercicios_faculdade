@@ -7,7 +7,7 @@
 
 cont = 0
 qntdIdade = 0
-qntAlturas = 0
+qntdAlturas = 0
 somaAlturas = 0
 qntPeso = 0
 
@@ -18,13 +18,13 @@ while cont < 5:
     if idade >= 51:
         qntdIdade = qntdIdade + 1
     if idade >= 10 and idade <=20:
-        qntAlturas = qntAlturas + 1
+        qntdAlturas = qntdAlturas + 1
         somaAlturas = somaAlturas + altura
     if peso < 40:
         qntPeso = qntPeso + 1
     cont = cont + 1
     
-mediaAlturas = somaAlturas/qntAlturas
+mediaAlturas = somaAlturas/qntdAlturas
 porcentagem = qntPeso/cont*100
 
 print("Pessoas com idade superior a 50 anos: ",qntdIdade)
