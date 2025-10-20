@@ -15,7 +15,7 @@ while cont < 5:
     idade = int(input("Digite a idade: "))
     altura = float(input("Digite a altura: "))
     peso = float(input("Digite o peso:"))
-    if idade >= 51:
+    if idade > 50:
         qntdIdade = qntdIdade + 1
     if idade >= 10 and idade <=20:
         qntdAlturas = qntdAlturas + 1
